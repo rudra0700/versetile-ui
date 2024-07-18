@@ -9,6 +9,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 html {
   font-size: 10px;
@@ -27,7 +28,7 @@ html {
 .half-white {
   color: rgba(255, 255, 255, 0.5);
 }
-main{
+main {
   background-color: black;
 }
 
@@ -151,43 +152,85 @@ header {
 }
 
 /* habits section */
-.habits{
+.habits {
   max-width: 85%;
   border: 2px solid white;
   margin: 0 auto;
   padding-top: 100px;
 }
 
-.habits .habits-title, .habits-desc{
+.habits .habits-title,
+.habits-desc {
   text-align: center;
 }
-.habits-title{
+.habits-title {
   font-size: 4.8rem;
   margin-bottom: 20px;
 }
-.habits-desc{
+.habits-desc {
   font-size: 1.4rem;
   margin-bottom: 40px;
 }
-.habits-container{
+.habits-container {
   display: flex;
 }
-.habits-routine{
+.habits-routine {
   text-align: center;
 }
-.habits-routine img{
+.habits-routine img {
   border-radius: 50%;
 }
-.habits-routine-title{
- font-size: 1.8rem;
- font-weight: 600;
- margin-top: 15px;
- margin-bottom: 15px;
+.habits-routine-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
-.habits-routine-desc{
-font-size: 1.4rem;
+.habits-routine-desc {
+  font-size: 1.4rem;
 }
- 
+
+/* extra mile section */
+.extra-mile {
+  max-width: 85%;
+  border: 2px solid white;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  background-color: rgba(34, 34, 34, 1);
+  border-radius: 15px;
+}
+.extra-mile-content{
+  width: 30%;
+}
+.extra-mile-title {
+  font-size: 4.8rem;
+}
+.extra-mile-desc {
+  font-size: 1.4rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+.extra-mile-img {
+  width: 35%;
+}
+.extra-mile-img img {
+  width: 100%;
+  border-radius: 15px;
+}
+.extra-mile-btn {
+  padding: 10px 20px;
+  background-color: rgba(230, 83, 60, 1);
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
 /* for small device */
 @media screen and (max-width: 576px) {
   /* nav bar and banner section */
@@ -241,15 +284,36 @@ font-size: 1.4rem;
   }
 
   /* habits section */
-  .habits-container{
+  .habits-container {
     flex-direction: column;
     gap: 10px;
   }
-  .habits{
+  .habits {
     padding-top: 20px;
   }
-  .habits-title{
+  .habits-title {
     font-size: 2.5rem;
   }
-}
 
+  /* extra mile section */
+  .extra-mile {
+   flex-direction: column;
+   gap: 20px;
+  }
+  .extra-mile-content{
+    width: 100%;
+  }
+  .extra-mile-img {
+    width: 100%;
+  }
+  .extra-mile-btn{
+    width: 100%;
+  }
+  .extra-mile-desc {
+    /* font-size: 1.4rem; */
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+    line-height: 25px;
+  }
+  
+}
