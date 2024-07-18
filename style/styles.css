@@ -231,6 +231,63 @@ header {
   font-weight: 500;
 }
 
+/* team section */
+.team{
+   max-width: 85%;
+   border: 2px solid white;
+   margin: 0 auto;
+   margin-top: 100px;
+}
+.team-title, .team-desc{
+  text-align: center;
+}
+.team-title{
+  font-size: 4.8rem;
+}
+.team-desc{
+  font-size: 1.4rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 25px;
+}
+.team-image-container-wrapper{
+ padding: 20px;
+ background-color: #191919;
+}
+.team-image-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.trainer{
+  position: relative;
+  width: 100%;
+}
+
+.team-image-container .trainer img{
+  width: 100%;
+  height: 390px;
+  border-radius: 15px;
+}
+.trainer-name{
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+.trainer-designation{
+  font-size: 1.4rem;
+}
+.trainer-details{
+  border: 2px solid red;
+  width: 40%;
+  position: absolute;
+  bottom: 95px;
+  left: 60px;
+  bottom: 20px;
+}
+
+
+
 /* for small device */
 @media screen and (max-width: 576px) {
   /* nav bar and banner section */
@@ -310,10 +367,16 @@ header {
     width: 100%;
   }
   .extra-mile-desc {
-    /* font-size: 1.4rem; */
-    /* margin-top: 20px;
-    margin-bottom: 20px; */
     line-height: 25px;
   }
-  
+
+  /* team section */
+  .team-image-container{
+    /* display: grid; */
+    grid-template-columns: repeat(1, 1fr);
+    /* gap: 10px; */
+  }
+  .team-title{
+    font-size: 4rem;
+  }
 }
