@@ -202,7 +202,7 @@ header {
   background-color: rgba(34, 34, 34, 1);
   border-radius: 15px;
 }
-.extra-mile-content{
+.extra-mile-content {
   width: 30%;
 }
 .extra-mile-title {
@@ -232,61 +232,114 @@ header {
 }
 
 /* team section */
-.team{
-   max-width: 85%;
-   border: 2px solid white;
-   margin: 0 auto;
-   margin-top: 100px;
+.team {
+  max-width: 85%;
+  border: 2px solid white;
+  margin: 0 auto;
+  margin-top: 100px;
 }
-.team-title, .team-desc{
+.team-title,
+.team-desc {
   text-align: center;
 }
-.team-title{
+.team-title {
   font-size: 4.8rem;
 }
-.team-desc{
+.team-desc {
   font-size: 1.4rem;
   margin-top: 10px;
   margin-bottom: 10px;
   line-height: 25px;
 }
-.team-image-container-wrapper{
- padding: 20px;
- background-color: #191919;
+.team-image-container-wrapper {
+  padding: 20px;
+  background-color: #191919;
 }
-.team-image-container{
+.team-image-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
 
-.trainer{
+.trainer {
   position: relative;
   width: 100%;
 }
 
-.team-image-container .trainer img{
+.team-image-container .trainer img {
   width: 100%;
   height: 390px;
   border-radius: 15px;
 }
-.trainer-name{
+.trainer-name {
   font-size: 2rem;
   margin-bottom: 5px;
 }
-.trainer-designation{
+.trainer-designation {
   font-size: 1.4rem;
 }
-.trainer-details{
-  border: 2px solid red;
+.trainer-details {
   width: 40%;
   position: absolute;
   bottom: 95px;
   left: 60px;
   bottom: 20px;
 }
+/* footer  */
 
+footer {
+  background-color: #1a1a1a;
+}
+.footer-container {
+  max-width: 85%;
+  border: 2px solid white;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+.footer-content {
+  width: 50%;
+  border: 2px solid red;
+}
+.footer-content-title {
+  font-size: 7rem;
+  font-style: italic;
+  color: rgba(230, 83, 60, 1);
+  font-weight: 700;
+}
+.footer-content-desc {
+  font-size: 1.4rem;
+  margin-top: 15px;
+  line-height: 25px;
+}
+.footer-link-title,
+.footer-plan-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
 
+.footer-link li,
+.footer-plan li {
+  font-size: 2rem;
+  list-style: none;
+  margin-bottom: 10px;
+}
+.footer-link li a,
+.footer-plan li a {
+  text-decoration: none;
+}
+hr{
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 85%;
+}
+.copyright {
+  text-align: center;
+  font-size: 2rem;
+}
 
 /* for small device */
 @media screen and (max-width: 576px) {
@@ -354,16 +407,16 @@ header {
 
   /* extra mile section */
   .extra-mile {
-   flex-direction: column;
-   gap: 20px;
+    flex-direction: column;
+    gap: 20px;
   }
-  .extra-mile-content{
+  .extra-mile-content {
     width: 100%;
   }
   .extra-mile-img {
     width: 100%;
   }
-  .extra-mile-btn{
+  .extra-mile-btn {
     width: 100%;
   }
   .extra-mile-desc {
@@ -371,12 +424,28 @@ header {
   }
 
   /* team section */
-  .team-image-container{
+  .team-image-container {
     /* display: grid; */
     grid-template-columns: repeat(1, 1fr);
     /* gap: 10px; */
   }
-  .team-title{
+  .team-title {
     font-size: 4rem;
+  }
+
+  /* footer */
+
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footer-content {
+    width: 100%;
+  }
+  .footer-link li,
+  .footer-plan li {
+    font-size: 1.8rem;
+    /* list-style: none;
+  margin-bottom: 10px; */
   }
 }
