@@ -27,6 +27,9 @@ html {
 .half-white {
   color: rgba(255, 255, 255, 0.5);
 }
+main{
+  background-color: black;
+}
 
 /* nav section */
 header {
@@ -34,7 +37,8 @@ header {
 }
 .nav-bar {
   justify-content: space-between;
-  width: 85%;
+  align-items: center;
+  max-width: 85%;
   border: 2px solid red;
   margin: 0 auto;
 }
@@ -59,7 +63,7 @@ header {
 
 /* banner section */
 .banner {
-  width: 85%;
+  max-width: 85%;
   border: 2px solid white;
   margin: 0 auto;
   gap: 15%;
@@ -145,9 +149,48 @@ header {
   margin-top: 3px;
   font-size: 1.3rem;
 }
+
+/* habits section */
+.habits{
+  max-width: 85%;
+  border: 2px solid white;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.habits .habits-title, .habits-desc{
+  text-align: center;
+}
+.habits-title{
+  font-size: 4.8rem;
+  margin-bottom: 20px;
+}
+.habits-desc{
+  font-size: 1.4rem;
+  margin-bottom: 40px;
+}
+.habits-container{
+  display: flex;
+}
+.habits-routine{
+  text-align: center;
+}
+.habits-routine img{
+  border-radius: 50%;
+}
+.habits-routine-title{
+ font-size: 1.8rem;
+ font-weight: 600;
+ margin-top: 15px;
+ margin-bottom: 15px;
+}
+.habits-routine-desc{
+font-size: 1.4rem;
+}
  
 /* for small device */
 @media screen and (max-width: 576px) {
+  /* nav bar and banner section */
   .nav-link {
     display: none;
   }
@@ -196,11 +239,17 @@ header {
   .workout-desc {
     font-size: 1.2rem;
   }
-}
 
-@media screen and (min-width: 577px) and (max-width: 992px){
-  .banner {
+  /* habits section */
+  .habits-container{
     flex-direction: column;
-    /* gap: 60px; */
+    gap: 10px;
+  }
+  .habits{
+    padding-top: 20px;
+  }
+  .habits-title{
+    font-size: 2.5rem;
   }
 }
+
