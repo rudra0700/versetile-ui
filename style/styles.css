@@ -234,7 +234,10 @@ header {
 /* bmi section */
 .bmi {
   border: 2px solid white;
+  max-width: 100%;
+  margin: 0 auto;
   margin-top: 100px;
+  background-color: #222222;
 }
 .bmi-title {
   font-size: 4.8rem;
@@ -268,7 +271,7 @@ td,
 th {
   border: 1px solid rgba(255, 255, 255, 0.5);
   text-align: left;
-  padding: 5px 15px;
+  padding: 15px 25px;
 }
 td {
   font-size: 1.4rem;
@@ -280,6 +283,7 @@ th {
 
 .calculate-bmi {
   border: 2px solid red;
+  width: 50%;
 }
 .calculate-bmi-title {
   font-size: 2.8rem;
@@ -287,8 +291,8 @@ th {
 }
 .calculate-bmi-desc {
   font-size: 1.4rem;
-  margin-top: 15px;
-  margin-bottom: 20px;
+  margin-top: 25px;
+  margin-bottom: 32px;
 }
 
 input {
@@ -296,8 +300,8 @@ input {
   background-color: #383838;
   font-size: 1.6rem;
   color: white;
-  /* border: none; */
-  /* outline: none; */
+  border: none;
+  outline: none;
   border-radius: 8px;
 }
 .measuring-input {
@@ -309,7 +313,8 @@ input {
   margin-bottom: 15px;
 }
 .activity-input input {
-  width: 100%;
+  width: 80%;
+  margin-bottom: 15px;
 }
 
 /* team section */
@@ -376,7 +381,11 @@ input {
 }
 .price-content {
   justify-content: space-between;
+  /* width: 25%; */
 }
+/* .price-content > div{
+  width: 25%;
+} */
 .price-title {
   font-size: 4.8rem;
   text-align: center;
@@ -558,6 +567,53 @@ hr {
     line-height: 25px;
   }
 
+  /* bmi section */
+  .bmi{
+    max-width: 85%;
+  }
+  .bmi-content{
+    flex-direction: column;
+  }
+  .measuring-input{
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .gender-input{
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .bmi-title {
+    font-size: 4rem;
+    margin-left: 50px;
+    margin-bottom: 15px;
+  }
+  .bmi-desc {
+    /* font-size: 1.4rem; */
+    margin-left: 50px;
+  }
+  
+  .bmi-content {
+    /* max-width: 85%;
+    border: 2px solid white;
+    margin: 0 auto;
+    display: flex;
+    padding: 30px 0; */
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 15px;
+  }
+  .calculator-chart{
+    width: 100%;
+  }
+  .calculate-bmi{
+    width: 100%;
+  }
+  .activity-input input {
+    width: 100%;
+  }
+
   /* team section */
   .team-image-container {
     grid-template-columns: repeat(1, 1fr);/
@@ -572,6 +628,10 @@ hr {
     align-items: center;
     gap: 20px;
   }
+  /* .price-content > div{
+    width: 100%;
+    align-items: center;
+  } */
   .price-title {
     font-size: 4rem;
   }
