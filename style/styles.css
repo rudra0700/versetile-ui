@@ -231,6 +231,87 @@ header {
   font-weight: 500;
 }
 
+/* bmi section */
+.bmi {
+  border: 2px solid white;
+  margin-top: 100px;
+}
+.bmi-title {
+  font-size: 4.8rem;
+  margin-left: 380px;
+}
+.bmi-desc {
+  font-size: 1.4rem;
+  margin-left: 380px;
+}
+
+.bmi-content {
+  max-width: 85%;
+  border: 2px solid white;
+  margin: 0 auto;
+  display: flex;
+  padding: 30px 0;
+  /* justify-content: space-between; */
+}
+.calculator-chart {
+  border: 2px solid red;
+  width: 50%;
+}
+.calculator-chart-title {
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+}
+table {
+  border-collapse: collapse;
+}
+td,
+th {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  text-align: left;
+  padding: 5px 15px;
+}
+td {
+  font-size: 1.4rem;
+}
+th {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.calculate-bmi {
+  border: 2px solid red;
+}
+.calculate-bmi-title {
+  font-size: 2.8rem;
+  /* margin-bottom: 20px; */
+}
+.calculate-bmi-desc {
+  font-size: 1.4rem;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 5px 15px;
+  background-color: #383838;
+  font-size: 1.6rem;
+  color: white;
+  /* border: none; */
+  /* outline: none; */
+  border-radius: 8px;
+}
+.measuring-input {
+  gap: 70px;
+  margin-bottom: 15px;
+}
+.gender-input {
+  gap: 72px;
+  margin-bottom: 15px;
+}
+.activity-input input {
+  width: 100%;
+}
+
 /* team section */
 .team {
   max-width: 85%;
@@ -285,6 +366,60 @@ header {
   left: 60px;
   bottom: 20px;
 }
+
+/* price section */
+.price-container {
+  border: 2px solid red;
+  max-width: 85%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.price-content {
+  justify-content: space-between;
+}
+.price-title {
+  font-size: 4.8rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.price-desc {
+  font-size: 1.6rem;
+  text-align: center;
+}
+.price-plan {
+  font-size: 2.1rem;
+}
+.price-info {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+}
+.price {
+  font-size: 4rem;
+  border: 2px solid white;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#dollar-sign {
+  font-size: 2rem;
+  margin-top: 0;
+}
+.price-btn {
+  padding: 10px 20px;
+  background-color: rgba(230, 83, 60, 1);
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.price-info i {
+  font-size: 1.4rem;
+  /* font-weight: 5; */
+}
+.test {
+  border: 2px solid red;
+}
 /* footer  */
 
 footer {
@@ -330,7 +465,7 @@ footer {
 .footer-plan li a {
   text-decoration: none;
 }
-hr{
+hr {
   margin: 0 auto;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -425,11 +560,19 @@ hr{
 
   /* team section */
   .team-image-container {
-    /* display: grid; */
-    grid-template-columns: repeat(1, 1fr);
-    /* gap: 10px; */
+    grid-template-columns: repeat(1, 1fr);/
   }
   .team-title {
+    font-size: 4rem;
+  }
+
+  /* price section */
+  .price-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .price-title {
     font-size: 4rem;
   }
 
@@ -445,7 +588,5 @@ hr{
   .footer-link li,
   .footer-plan li {
     font-size: 1.8rem;
-    /* list-style: none;
-  margin-bottom: 10px; */
   }
 }
