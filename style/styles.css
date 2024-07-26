@@ -61,9 +61,123 @@ header {
   padding: 5px 15px;
   border-radius: 15px;
 }
+/* header {
+  background-color: rgba(17, 17, 17, 1);
+}
+.nav-bar {
+  justify-content: space-between;
+  align-items: center;
+  max-width: 85%;
+  border: 2px solid red;
+  margin: 0 auto;
+}
+.nav-title {
+  font-size: 3.6rem;
+  font-weight: 700;
+  font-style: italic;
+}
+.nav-link li {
+  list-style: none;
+  font-size: 1.8rem;
+  margin-right: 80px;
+}
+.nav-link li a {
+  text-decoration: none;
+}
+#home {
+  background-color: rgba(230, 83, 60, 1);
+  padding: 5px 15px;
+  border-radius: 15px;
+} */
 
 /* banner section */
 .banner {
+  max-width: 85%;
+  border: 2px solid white;
+  margin: 0 auto;
+  gap: 15%;
+  margin-top: 50px;
+  align-items: center;
+}
+.banner-content {
+  border: 1px solid red;
+  width: 50%;
+}
+.banner-title {
+  font-size: 7.8rem;
+}
+.banner-desc {
+  font-size: 1.6rem;
+  margin-bottom: 40px;
+}
+.banner-img {
+  border: 2px solid yellow;
+  position: relative;
+}
+.join-btn {
+  padding: 10px 20px;
+  background-color: rgba(230, 83, 60, 1);
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.download-btn {
+  padding: 10px 20px;
+  background: transparent;
+  color: white;
+  outline: none;
+  border: 1px solid white;
+  border-radius: 20px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.tutorial-views {
+  align-items: center;
+  width: 60%;
+  background: rgba(48, 48, 48, 0.54);
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 50px;
+  left: -140px;
+}
+.tutorial-shape {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: rgba(230, 83, 60, 1);
+}
+.tutorial-title {
+  font-size: 2rem;
+  margin-bottom: 0px;
+}
+.tutorial-desc {
+  font-size: 1.6rem;
+  margin-top: 8px;
+}
+.workout-views {
+  width: 60%;
+  background: rgba(48, 48, 48, 0.54);
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  top: 120px;
+  left: 220px;
+}
+.workout-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 4rem;
+}
+.workout-desc {
+  margin-top: 3px;
+  font-size: 1.3rem;
+}
+/* .banner {
   max-width: 85%;
   border: 2px solid white;
   margin: 0 auto;
@@ -149,7 +263,7 @@ header {
 .workout-desc {
   margin-top: 3px;
   font-size: 1.3rem;
-}
+} */
 
 /* habits section */
 .habits {
@@ -254,7 +368,6 @@ header {
   margin: 0 auto;
   display: flex;
   padding: 30px 0;
-  /* justify-content: space-between; */
 }
 .calculator-chart {
   border: 2px solid red;
@@ -351,7 +464,6 @@ input {
   position: relative;
   width: 100%;
 }
-
 .team-image-container .trainer img {
   width: 100%;
   height: 390px;
@@ -381,11 +493,7 @@ input {
 }
 .price-content {
   justify-content: space-between;
-  /* width: 25%; */
 }
-/* .price-content > div{
-  width: 25%;
-} */
 .price-title {
   font-size: 4.8rem;
   text-align: center;
@@ -424,13 +532,12 @@ input {
 }
 .price-info i {
   font-size: 1.4rem;
-  /* font-weight: 5; */
 }
 .test {
   border: 2px solid red;
 }
-/* footer  */
 
+/* footer  */
 footer {
   background-color: #1a1a1a;
 }
@@ -568,46 +675,37 @@ hr {
   }
 
   /* bmi section */
-  .bmi{
+  .bmi {
     max-width: 85%;
   }
-  .bmi-content{
+  .bmi-content {
     flex-direction: column;
   }
-  .measuring-input{
+  .measuring-input {
     flex-direction: column;
     gap: 10px;
     margin-bottom: 10px;
   }
-  .gender-input{
+  .gender-input {
     flex-direction: column;
     gap: 10px;
   }
-
   .bmi-title {
     font-size: 4rem;
     margin-left: 50px;
     margin-bottom: 15px;
   }
   .bmi-desc {
-    /* font-size: 1.4rem; */
     margin-left: 50px;
   }
-  
   .bmi-content {
-    /* max-width: 85%;
-    border: 2px solid white;
-    margin: 0 auto;
-    display: flex;
-    padding: 30px 0; */
-    /* justify-content: space-between; */
     align-items: center;
     gap: 15px;
   }
-  .calculator-chart{
+  .calculator-chart {
     width: 100%;
   }
-  .calculate-bmi{
+  .calculate-bmi {
     width: 100%;
   }
   .activity-input input {
@@ -616,7 +714,7 @@ hr {
 
   /* team section */
   .team-image-container {
-    grid-template-columns: repeat(1, 1fr);/
+    grid-template-columns: repeat(1, 1fr);
   }
   .team-title {
     font-size: 4rem;
@@ -628,16 +726,11 @@ hr {
     align-items: center;
     gap: 20px;
   }
-  /* .price-content > div{
-    width: 100%;
-    align-items: center;
-  } */
   .price-title {
     font-size: 4rem;
   }
 
   /* footer */
-
   .footer-container {
     flex-direction: column;
     gap: 30px;
