@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap");
 
 .inter-family-font {
   font-family: "Inter", sans-serif;
@@ -6,6 +7,12 @@
   font-weight: 400;
   font-style: normal;
 }
+.grey-qo-regular {
+  font-family: "Grey Qo", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -19,6 +26,7 @@ html {
 .display-flex {
   display: flex;
 }
+
 .primary-color {
   color: rgba(230, 83, 60, 1);
 }
@@ -40,8 +48,12 @@ header {
   justify-content: space-between;
   align-items: center;
   max-width: 85%;
-  border: 2px solid red;
   margin: 0 auto;
+}
+.hamburger-menu {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
 }
 .nav-title {
   font-size: 3.6rem;
@@ -53,33 +65,13 @@ header {
   font-size: 1.8rem;
   margin-right: 80px;
 }
-.nav-link li a {
-  text-decoration: none;
-}
-#home {
-  background-color: rgba(230, 83, 60, 1);
-  padding: 5px 15px;
-  border-radius: 15px;
-}
-/* header {
-  background-color: rgba(17, 17, 17, 1);
-}
-.nav-bar {
-  justify-content: space-between;
-  align-items: center;
-  max-width: 85%;
-  border: 2px solid red;
-  margin: 0 auto;
-}
-.nav-title {
-  font-size: 3.6rem;
-  font-weight: 700;
-  font-style: italic;
-}
-.nav-link li {
-  list-style: none;
-  font-size: 1.8rem;
-  margin-right: 80px;
+.nav-link i {
+  color: white;
+  display: none;
+  position: absolute;
+  right: 150px;
+  top: 17px;
+  font-size: 2rem;
 }
 .nav-link li a {
   text-decoration: none;
@@ -88,30 +80,32 @@ header {
   background-color: rgba(230, 83, 60, 1);
   padding: 5px 15px;
   border-radius: 15px;
-} */
+}
 
 /* banner section */
+#shape {
+  font-size: 15rem;
+}
 .banner {
   max-width: 85%;
-  border: 2px solid white;
   margin: 0 auto;
   gap: 15%;
   margin-top: 50px;
   align-items: center;
 }
 .banner-content {
-  border: 1px solid red;
   width: 50%;
+  line-height: 90px;
 }
 .banner-title {
   font-size: 7.8rem;
 }
 .banner-desc {
   font-size: 1.6rem;
-  margin-bottom: 40px;
+  margin-top: 10px;
+  line-height: normal;
 }
 .banner-img {
-  border: 2px solid yellow;
   position: relative;
 }
 .join-btn {
@@ -177,102 +171,13 @@ header {
   margin-top: 3px;
   font-size: 1.3rem;
 }
-/* .banner {
-  max-width: 85%;
-  border: 2px solid white;
-  margin: 0 auto;
-  gap: 15%;
-  margin-top: 50px;
-  align-items: center;
-}
-.banner-content {
-  border: 1px solid red;
-  width: 50%;
-}
-.banner-title {
-  font-size: 7.8rem;
-}
-.banner-desc {
-  font-size: 1.6rem;
-  margin-bottom: 40px;
-}
-.banner-img {
-  border: 2px solid yellow;
-  position: relative;
-}
-.join-btn {
-  padding: 10px 20px;
-  background-color: rgba(230, 83, 60, 1);
-  border: none;
-  outline: none;
-  border-radius: 20px;
-  font-size: 1.8rem;
-  font-weight: 500;
-}
-.download-btn {
-  padding: 10px 20px;
-  background: transparent;
-  color: white;
-  outline: none;
-  border: 1px solid white;
-  border-radius: 20px;
-  font-size: 1.8rem;
-  font-weight: 500;
-  margin-left: 10px;
-}
-.tutorial-views {
-  align-items: center;
-  width: 60%;
-  background: rgba(48, 48, 48, 0.54);
-  padding: 10px;
-  border-radius: 10px;
-  position: absolute;
-  bottom: 50px;
-  left: -140px;
-}
-
-.tutorial-shape {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-right: 10px;
-  background-color: rgba(230, 83, 60, 1);
-}
-.tutorial-title {
-  font-size: 2rem;
-  margin-bottom: 0px;
-}
-.tutorial-desc {
-  font-size: 1.6rem;
-  margin-top: 8px;
-}
-.workout-views {
-  width: 60%;
-  background: rgba(48, 48, 48, 0.54);
-  padding: 10px;
-  border-radius: 10px;
-  position: absolute;
-  top: 120px;
-  left: 220px;
-}
-.workout-title {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 4rem;
-}
-.workout-desc {
-  margin-top: 3px;
-  font-size: 1.3rem;
-} */
 
 /* habits section */
 .habits {
   max-width: 85%;
-  border: 2px solid white;
   margin: 0 auto;
   padding-top: 100px;
 }
-
 .habits .habits-title,
 .habits-desc {
   text-align: center;
@@ -307,7 +212,6 @@ header {
 /* extra mile section */
 .extra-mile {
   max-width: 85%;
-  border: 2px solid white;
   margin: 0 auto;
   margin-top: 100px;
   display: flex;
@@ -347,7 +251,6 @@ header {
 
 /* bmi section */
 .bmi {
-  border: 2px solid white;
   max-width: 100%;
   margin: 0 auto;
   margin-top: 100px;
@@ -361,16 +264,13 @@ header {
   font-size: 1.4rem;
   margin-left: 380px;
 }
-
 .bmi-content {
   max-width: 85%;
-  border: 2px solid white;
   margin: 0 auto;
   display: flex;
   padding: 30px 0;
 }
 .calculator-chart {
-  border: 2px solid red;
   width: 50%;
 }
 .calculator-chart-title {
@@ -393,21 +293,17 @@ th {
   font-size: 1.6rem;
   font-weight: 500;
 }
-
 .calculate-bmi {
-  border: 2px solid red;
   width: 50%;
 }
 .calculate-bmi-title {
   font-size: 2.8rem;
-  /* margin-bottom: 20px; */
 }
 .calculate-bmi-desc {
   font-size: 1.4rem;
   margin-top: 25px;
   margin-bottom: 32px;
 }
-
 input {
   padding: 5px 15px;
   background-color: #383838;
@@ -433,7 +329,6 @@ input {
 /* team section */
 .team {
   max-width: 85%;
-  border: 2px solid white;
   margin: 0 auto;
   margin-top: 100px;
 }
@@ -459,7 +354,6 @@ input {
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
-
 .trainer {
   position: relative;
   width: 100%;
@@ -486,7 +380,6 @@ input {
 
 /* price section */
 .price-container {
-  border: 2px solid red;
   max-width: 85%;
   margin: 0 auto;
   margin-top: 100px;
@@ -512,7 +405,6 @@ input {
 }
 .price {
   font-size: 4rem;
-  border: 2px solid white;
   display: flex;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -533,9 +425,6 @@ input {
 .price-info i {
   font-size: 1.4rem;
 }
-.test {
-  border: 2px solid red;
-}
 
 /* footer  */
 footer {
@@ -543,7 +432,6 @@ footer {
 }
 .footer-container {
   max-width: 85%;
-  border: 2px solid white;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -551,7 +439,6 @@ footer {
 }
 .footer-content {
   width: 50%;
-  border: 2px solid red;
 }
 .footer-content-title {
   font-size: 7rem;
@@ -570,7 +457,6 @@ footer {
   font-weight: bold;
   margin-bottom: 15px;
 }
-
 .footer-link li,
 .footer-plan li {
   font-size: 2rem;
@@ -598,6 +484,16 @@ hr {
   .nav-link {
     display: none;
   }
+  .hamburger-menu {
+    display: block;
+    color: white;
+  }
+  #shape {
+    font-size: 7.8rem;
+  }
+  .banner-content {
+    line-height: 55px;
+  }
   .banner {
     flex-direction: column;
     gap: 60px;
@@ -607,7 +503,8 @@ hr {
     width: 100%;
   }
   .banner-desc {
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
   .banner-img {
     width: 100%;
@@ -719,7 +616,6 @@ hr {
   .team-title {
     font-size: 4rem;
   }
-
   /* price section */
   .price-content {
     flex-direction: column;
